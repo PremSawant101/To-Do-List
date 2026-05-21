@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Edit Task</h1>
+
+        <form action="/update/<%= task.id %>" method="POST">
+            <input type="text" name="task" value="<%= task.task %>" required>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
